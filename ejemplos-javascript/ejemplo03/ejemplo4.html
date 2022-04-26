@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Demo JavaScript</title>
+  </head>
+  <body>
+    <h1>Nombres y Apellidos</h1>
+    <p id="resultadoNombre"></p>
+    <p id="resultadoApellido"></p>
+    
+    <script type="text/javascript" charset="utf-8">
+      function nombre(entrada1){
+        return entrada1;
+      }
+
+      function apellido(entrada2){
+        return entrada2    
+      }
+      var entrada1 = window.prompt("Escriba el Nombre: ", "nombres");
+      var entrada2 = window.prompt("Escriba el Apellido: ", "apellidos");
+    
+      document.getElementById("resultadoNombre").innerHTML = "<h1>El Nombre\
+ es: " + entrada1 + "</h1>";
+      document.getElementById("resultadoApellido").innerHTML = "<h2>El Apellido\
+ es: " + entrada2 + "</h2>";
+    </script>
+  </body>
+</html>
